@@ -85,3 +85,36 @@ You're given one parameter, the original string. You don't have to worry with st
 function removeChar(str){
     return (str.substring(1, str.length - 1))
 }
+
+/*In this simple assignment you are given a number and have to make it negative. 
+But maybe the number is already negative?*/
+
+function makeNegative(num){
+  return -Math.abs(num)
+}
+
+/*Complete the solution so that it reverses the string passed into it.*/
+
+function solution(str){
+  let newStr = ""
+  for (let i = str.length - 1; i >= 0; i--){
+    newStr += str[i]
+  }
+  return newStr   
+}
+
+/*Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.*/
+
+function summation(num){
+  let total = 0
+  for (i = 1; i <= num; i++){
+    total += i
+  }
+  return total
+}
+
+/*We need a function that can transform a number into a string.*/
+
+function numberToString(num) {
+  return num.toString()
+}
