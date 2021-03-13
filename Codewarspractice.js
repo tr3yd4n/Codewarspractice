@@ -55,10 +55,33 @@ function positiveSum(arr) {
      }
    }
    return answer
+}  
+
+/*Simple, remove the spaces from the string, then return the resultant string.*/
+function noSpace(x){
+    return x.replace(/\s/g, '')
 }
 
- /*Simple, remove the spaces from the string, then return the resultant string.*/
+/*Very simple, given a number, find its opposite.*/
 
- function noSpace(x){
-    return x.replace(/\s/g, '')
+function opposite(number) {
+  return (-number)
+}
+
+/*Make a string and repeat it*/
+const egg = "I AM AN EGG"
+console.log(egg.repeat(2))
+
+
+/*Write a function called repeat_str which repeats the given string src exactly count times.*/
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+/*It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. 
+You're given one parameter, the original string. You don't have to worry with strings with less than two characters.*/
+
+function removeChar(str){
+    return (str.substring(1, str.length - 1))
 }
