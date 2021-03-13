@@ -1,3 +1,5 @@
+// These questions are from the Codewars website
+
 /*Create a function that takes an integer as an argument
 and returns "Even" for even numbers or "Odd" for odd numbers.*/
 
@@ -12,7 +14,7 @@ function even_or_odd(number){
 You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. 
 Be careful, there shouldn't be a space at the beginning or the end of the sentence!*/
 
-function smash (words){
+function smash(words){
     "use strict"
     return words.join(" ")
 }
@@ -33,3 +35,30 @@ function countSheeps(arrayOfSheep){
     return answer
 }
 console.log(countSheeps(arrayOfSheep))
+
+/*This code does not execute properly. Try to figure out why.
+function multiply(a, b){
+    a * b
+}*/
+
+function multiply(a, b){
+    return a * b
+}
+  
+/*You get an array of numbers, return the sum of all of the positives ones.*/
+
+function positiveSum(arr) {
+    let answer = 0
+   for (let i = 0; i < arr.length; i++){
+     if(arr[i] > 0){
+       answer += arr[i]
+     }
+   }
+   return answer
+}
+
+ /*Simple, remove the spaces from the string, then return the resultant string.*/
+
+ function noSpace(x){
+    return x.replace(/\s/g, '')
+}
